@@ -13,6 +13,7 @@ img {
 /******************* General ***************************/
 :root {
     --Dark-cyan: hsl(158, 36%, 37%);
+    --dark-cyan-active: #1a4031;
     --Cream: hsl(30, 38%, 92%);
     --Very-dark-blue: hsl(212, 21%, 14%);
     --Dark-grayish-blue: hsl(228, 12%, 48%);
@@ -121,6 +122,14 @@ h1 {
     -o-border-radius: 0.625em;
     display: block;
     text-align: center;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+.box-content a:hover {
+    background-color: var(--dark-cyan-active);
 }
 .box-content a img {
     width: 20px;
