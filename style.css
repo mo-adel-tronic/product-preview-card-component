@@ -39,17 +39,13 @@ body {
     min-height: 100vh;
     padding-top: 30px;
     padding-bottom: 30px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
     font-size: 14px;
     font-family: 'Montserrat';
     line-height: 1.6;
 }
 
 /******************* Box Content ***************************/
-.container {
+main {
     background-color: var(--White);
     width: 91.2%;
     border-radius: .625em;
@@ -58,8 +54,10 @@ body {
     -ms-border-radius: .625em;
     -o-border-radius: .625em;
     margin-bottom: var(--m-v);
+    margin-left: auto;
+    margin-right: auto;
 }
-.container > img:first-of-type {
+main > img:first-of-type {
     margin-bottom: var(--m-v);
     border-radius: inherit;
     -webkit-border-radius: inherit;
@@ -69,7 +67,7 @@ body {
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
 }
-.container img:nth-of-type(2) {
+main img:nth-of-type(2) {
     display: none;
 }
 .box-content {
@@ -77,7 +75,7 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
-h6 {
+p.box-tag {
     color: var(--Dark-grayish-blue);
     margin-bottom: calc(var(--m-v) - 10px);
     font-weight: 500;
@@ -137,17 +135,21 @@ h1 {
     padding-right: 0.4em;
 }
 
+footer { font-size: 11px; text-align: center;}
+footer a { color: hsl(228, 45%, 44%); }
+
 @media screen and (min-width: 900px) {
-    .container {
+    main {
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
         width: 41.6666%;
         padding-bottom: var(--m-v);
     }
-    .container > img:first-of-type {
+    main > img:first-of-type {
         display: none;
     }
-    .container img:nth-of-type(2) {
+    main img:nth-of-type(2) {
         display: block;
         width: 50%;
         border-top-left-radius: 0.625em;
